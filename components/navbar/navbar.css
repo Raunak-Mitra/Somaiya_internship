@@ -1,0 +1,113 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f0f0f0; 
+  width: 100%;
+  min-height: 100px;
+  }
+  
+  .logo {
+    flex: 1;
+    margin-right: 20px;
+    width: 200px;
+  }
+  
+  .logoImage_navbar {
+    margin-left: 60px;;
+    width: 200px; 
+    height:60px;
+  }
+  
+  .navLinks {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navItem {
+    margin-left: 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .navItem.profileButton {
+    background-color:#0C56AC;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-left: 0px;
+  }
+
+  .user-icon{
+    margin-right: 10px;
+  }
+
+  .navItem.logoutLink {
+    border: 1px solid #ccc;
+    margin-right: 20px;
+  }
+  
+  .navItem.achievementsButton {
+    background-color: #941919; 
+    color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    
+  }
+nav .menu{
+    top: 0.5rem;
+    right: 0.5rem;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+}
+
+/* nav .menu span{
+    height: 0.04rem;
+    width: 100%;
+    background-color:white;
+    border-radius: 0.2rem;
+
+} */
+
+@media (max-width:768px){
+    nav .menu{
+        display: flex;
+    }
+    
+    nav{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .navLinks{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+        
+    }
+
+    nav ul.open {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-bottom: 0.25rem;
+        list-style: none;
+        margin:0;
+        padding: 0;
+    }
+    nav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 0.2rem 0.5rem;
+    }
+}
